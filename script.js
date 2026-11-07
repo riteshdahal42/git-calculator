@@ -13,11 +13,46 @@ document.getElementById("add").addEventListener("click", function() {
     document.getElementById("result").textContent =
         "Result: " + result;
 });
-
 document.getElementById("subtract").addEventListener("click", function() {
     const { num1, num2 } = getNumbers();
 
     const result = num1 - num2;
+
+    document.getElementById("result").textContent =
+        "Result: " + result;
+});
+document.getElementById("multiply").addEventListener("click", function() {
+    const { num1, num2 } = getNumbers();
+
+    const result = num1 * num2;
+
+    document.getElementById("result").textContent =
+        "Result: " + result;
+});
+document.getElementById("divide").addEventListener("click", function() {
+    const { num1, num2 } = getNumbers();
+
+    if (num2 === 0) {
+        document.getElementById("result").textContent =
+            "Cannot divide by zero";
+        return;
+    }
+
+    const result = num1 / num2;
+
+    document.getElementById("result").textContent =
+        "Result: " + result;
+});
+document.getElementById("divide").addEventListener("click", function() {
+    const { num1, num2 } = getNumbers();
+
+    if (num2 === 0) {
+        document.getElementById("result").textContent =
+            "Cannot divide by zero";
+        return;
+    }
+
+    const result = num1 / num2;
 
     document.getElementById("result").textContent =
         "Result: " + result;
