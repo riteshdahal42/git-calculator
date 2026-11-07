@@ -44,16 +44,23 @@ document.getElementById("divide").addEventListener("click", function() {
         "Result: " + result;
 });
 document.getElementById("divide").addEventListener("click", function() {
-    const { num1, num2 } = getNumbers();
+    const { numFirst, numSecond } = getNumbers();
 
-    if (num2 === 0) {
+    if (numSecond === 0) {
         document.getElementById("result").textContent =
             "Cannot divide by zero";
         return;
     }
 
-    const result = num1 / num2;
+    const result = numFirst / numSecond;
 
     document.getElementById("result").textContent =
         "Result: " + result;
 });
+
+
+
+
+
+
+
